@@ -12,7 +12,7 @@ import wishlist from "../Assets/images/wishlist.png"
 
 export default function Navbar() {
 
-    const {getCartAmount, showSubCart, setShowSubCart} = useShopContext();
+    const {getCartAmount, setShowSubCart} = useShopContext();
     const [showTemplates, setShowTemplates] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
 

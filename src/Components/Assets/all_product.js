@@ -65,6 +65,7 @@ let all_product = [
     color: "Blue",
     type: "Jackets",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -79,6 +80,7 @@ let all_product = [
     color: "Brown",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   },
   {
@@ -93,6 +95,7 @@ let all_product = [
     color: "Blue",
     type: "T-Shirts",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -107,6 +110,7 @@ let all_product = [
     color: "Green",
     type: "T-Shirts",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -121,6 +125,7 @@ let all_product = [
     color: "Blue",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -135,6 +140,7 @@ let all_product = [
     color: "Blue",
     type: "Jackets",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -149,6 +155,7 @@ let all_product = [
     color: "Red",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -163,6 +170,7 @@ let all_product = [
     color: "Blue",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -177,6 +185,7 @@ let all_product = [
     color: "Green",
     type: "Shoeses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -191,6 +200,7 @@ let all_product = [
     color: "Pink",
     type: "Shoeses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -205,6 +215,7 @@ let all_product = [
     color: "Orange",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -219,6 +230,7 @@ let all_product = [
     color: "Green",
     type: "Outfits",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   },
   {
@@ -233,6 +245,7 @@ let all_product = [
     color: "Pink",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -245,6 +258,7 @@ let all_product = [
     imgs: [img1, img2, img3, img4],
     sizes: ["L", "ML", "XL", "XXL"],
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     color: "Brown",
     type: "Outfits",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
@@ -261,6 +275,7 @@ let all_product = [
     color: "Pink",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -275,6 +290,7 @@ let all_product = [
     color: "Pink",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -289,6 +305,7 @@ let all_product = [
     color: "Blue",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -303,6 +320,7 @@ let all_product = [
     color: "Pink",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -317,6 +335,7 @@ let all_product = [
     color: "Green",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -331,6 +350,7 @@ let all_product = [
     color: "Blue",
     type: "Others",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -345,6 +365,7 @@ let all_product = [
     color: "Green",
     type: "Jackets",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -359,6 +380,7 @@ let all_product = [
     color: "Blue",
     type: "T-Shirts",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -373,6 +395,7 @@ let all_product = [
     color: "Pink",
     type: "Dresses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -387,6 +410,7 @@ let all_product = [
     color: "Blue",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -401,6 +425,7 @@ let all_product = [
     color: "Pink",
     type: "Outfits",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -415,6 +440,7 @@ let all_product = [
     color: "Brown",
     type: "T-Shirts",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -429,6 +455,7 @@ let all_product = [
     color: "Pink",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -443,6 +470,7 @@ let all_product = [
     color: "Orange",
     type: "Shoeses",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -457,6 +485,7 @@ let all_product = [
     color: "Pink",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -471,6 +500,7 @@ let all_product = [
     color: "Brown",
     type: "Outfits",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -485,6 +515,7 @@ let all_product = [
     color: "Brown",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -499,6 +530,7 @@ let all_product = [
     color: "Green",
     type: "Others",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -513,6 +545,7 @@ let all_product = [
     color: "Blue",
     type: "Others",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -527,6 +560,7 @@ let all_product = [
     color: "Pink",
     type: "Outfits",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -541,6 +575,7 @@ let all_product = [
     color: "Brown",
     type: "Pants",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
   {
@@ -555,6 +590,7 @@ let all_product = [
     color: "Pink",
     type: "Handbags",
     tags: ["boys", "clothes", "brands", "shirt"],
+    info: [{style: "casual", composition: "cotton", weight: "0.3kg", dimensions: "80 × 30 × 120 cm",}],
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   },
 ];

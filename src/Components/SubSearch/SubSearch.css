@@ -26,20 +26,25 @@
 }
 
 .sub-search .search-content .input-content {
+    position: relative;
     width: 480px;
-    height: 46px;
+    height: 48px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 24px;
     overflow: hidden;
 }
 
 .sub-search .input-content input {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 425px;
     height: 100%;
-    padding: 5px 25px;
+    padding: 5px 20px;
+    font-size: 15px;
     background: #fff;
     border: none;
 }
@@ -48,24 +53,36 @@
     outline: none;
 }
 
+.sub-search .input-content .link {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #faf9fd;
+    box-shadow: 0 1px 15px rgb(235, 225, 245);
+    border-radius: 50%;
+}
+
 .sub-search .input-content .icon {
-    width: 55px;
-    text-align: center;
-    font-size: 22px;
-    color: #999;
+    font-size: 20px;
+    color: rebeccapurple;
 }
 
 .sub-search .search-content .result {
     background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 13px;
+    border-radius: 24px;
     box-shadow: 2px 8px 40px rgba(0,0,0,.08);
     margin-top: 3px;
 }
 
 .sub-search .search-content .result h6 {
     font-size: 14px;
-    padding-bottom: 7px;
+    padding: 7px 0;
     margin-bottom: 12px;
     border-bottom: 1px solid rgb(241, 234, 234);
 }
@@ -76,12 +93,14 @@
 
 .sub-search .search-items li {
     padding: 10px;
+    border: 1px solid transparent;
     transition: 0.3s;
 }
 
 .sub-search .search-items li:hover {
-    transform: translateX(5px);
+    border: 1px solid #e9e6e6;
     background: #f8f8f8;
+    padding: 10px 12px;
 }
 
 .sub-search .search-items li img {
@@ -91,6 +110,15 @@
 
 .sub-search .search-items li:hover img {
     outline: 3px solid #fff;
+}
+
+.sub-search .no-result {
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.sub-search .no-result span {
+    color: rebeccapurple;
 }
 
 .sub-search button.close{

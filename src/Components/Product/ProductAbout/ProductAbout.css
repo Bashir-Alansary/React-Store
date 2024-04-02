@@ -28,3 +28,14 @@
 .product-about .part-content {
     margin: 40px 0;
 }
+
+.info .table td:last-child, 
+.info .table td:first-child, 
+.info .table th:last-child, 
+.info .table th:first-child {
+    width: unset;
+}
+
+.info .table td {
+    height: unset;
+}

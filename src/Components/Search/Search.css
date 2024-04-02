@@ -10,12 +10,23 @@
     padding: 5px 25px;
     background: #fff;
     border: 1px solid #c4d4f31c;
-    box-shadow: 2px 2px 20px #00000028;
+    box-shadow: 2px 2px 20px #00000018;
 }
 
 .search .input-content input:focus {
     outline: none;
-    box-shadow: 2px 2px 30px #00000028;
+    box-shadow: 2px 2px 20px #00000020;
+}
+
+.search .search-btn {
+    border: none;
+    background: rebeccapurple;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.search .search-btn:focus {
+    outline: none;
 }
 
 .search .result .content{

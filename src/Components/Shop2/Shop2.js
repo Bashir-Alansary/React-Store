@@ -313,7 +313,7 @@ export default function Shop2({category, img}) {
                         {
                             newArrivals.map(item => {
                                 return (
-                                    <Item key={item.id} newArrivalsView={"new-arrivals-view"} {...item} />
+                                    <Item key={item.id} itemClass={"new-arrivals-view"} {...item} />
                                 )
                             })
                         }
@@ -349,7 +349,7 @@ export default function Shop2({category, img}) {
                             {
                                 dataPerPage.map(item => {
                                     return (
-                                        <Item listView = {listView} key = {item.id} {...item} />
+                                        <Item itemClass = {listView? 'item-list-view' : 'item'} key = {item.id} {...item} />
                                     )
                                 })
                             }

@@ -3,7 +3,7 @@ import Cart from "./Components/Cart/Cart";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./pages/Login";
-import Product from "./pages/Product";
+import Product from "./Components/Product/Product";
 import Home from "./pages/Home";
 import ShopCategory from "./pages/ShopCategory/ShopCategory";
 import womenBanner from "./Components/Assets/images/women_banner.png";
@@ -14,6 +14,9 @@ import WishList from "./Components/WishList/WishList";
 import Compare from "./Components/Compare/Compare";
 import Shop2 from "./Components/Shop2/Shop2";
 import Search from "./Components/Search/Search";
+import About from "./Components/About/About";
+import Error404 from "./Components/Error404/Error404";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -37,6 +40,9 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>

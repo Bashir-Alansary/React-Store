@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdStar} from "react-icons/io";
-import { useShopContext } from '../../../Context/ShopContext';
+import { useShopContext } from '../../../../Context/ShopContext';
 
 export default function ReviewInputs() {
     const{clickRate, setClickRate, starColor, setStarColor} = useShopContext();

@@ -17,12 +17,12 @@ import { MdOutlineEmail } from "react-icons/md";
 export const pages = [
     {
         id: 1,
-        link: '/',
+        link: '/about',
         name: "about",
     },
     {
         id: 2,
-        link: '/',
+        link: '/contact',
         name: "contact",
     },
     {

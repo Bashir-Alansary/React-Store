@@ -1,0 +1,70 @@
+.contact {
+
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.contact .content .form {
+    width: 45%;
+}
+
+.contact .form h3 {
+    font-size: 22px;
+    color: rebeccapurple;
+}
+
+.contact .form p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.contact .form .input-content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact .form .name-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .form .name-phone input {
+    width: 49%;
+}
+
+.contact .input-content input, 
+.contact .input-content textarea {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: 1px solid #dddcdc;
+}
+
+.contact .input-content input:focus, 
+.contact .input-content textarea:focus {
+    outline: none;
+}
+
+.contact .input-content input {
+    height: 47px;
+}
+
+.contact .input-content textarea {
+    height: 90px;
+}
+
+.contact .content .info{
+    width: 45%;
+}
+
+.contact .input-content button {
+    width: 140px;
+    height: 47px;
+    border: none;
+    background: rebeccapurple;
+    color: #fff;
+}

@@ -1,8 +1,28 @@
 import React, { useState } from 'react'
 import "./ProductAbout.css"
-import {parties} from "./ProductAboutData"
+import ProductDescription from "./ProductDescription";
+import ProductMoreInfo from "./ProductMoreInfo";
+import ProductReviews from "./ProductReviews/ProductReviews";
 
 export default function ProductAbout({product}) {
+
+  const parties = [
+    {
+        id:1,
+        name: "description",
+        comp: <ProductDescription description = {product.desc} />
+    },
+    {
+        id:2,
+        name: "more info",
+        comp: <ProductMoreInfo info = {product.info} />
+    },
+    {
+        id:3,
+        name: "reviews",
+        comp: <ProductReviews />
+    }
+]
 
   const [part, setPart] = useState(parties[0]);
   const [activeId, setActiveId] = useState(part.id);

@@ -7,7 +7,7 @@ import { MdDoneOutline } from "react-icons/md";
 import "./Item.css"
 import { useShopContext } from '../../Context/ShopContext';
 
-export default function Item({id, img, name, oldPrice, newPrice, desc, listView, newArrivalsView, searchView}) {
+export default function Item({id, img, name, oldPrice, newPrice, desc, itemClass}) {
   const{
     increaseItemAmount, 
     setAddedMsg, 
@@ -24,21 +24,8 @@ export default function Item({id, img, name, oldPrice, newPrice, desc, listView,
     setDisabledBtn(false);
   }
 
-  const getItemClass = () => {
-    if (listView) {
-      return"item-list-view";
-    } else if (newArrivalsView) {
-      return newArrivalsView;
-    } else if (searchView) {
-      return searchView;
-    } 
-    else {
-      return "item";
-    }
-  }
-
   return (
-    <div className={getItemClass()}>
+    <div className={itemClass}>
       <div className='item-div'>
         <div className='content'>
           <Link className='imgbx link' to={"/product/"+ id}  onClick={linkClick}>
@@ -53,22 +40,22 @@ export default function Item({id, img, name, oldPrice, newPrice, desc, listView,
                 <span className='new-price'>&#0036;{newPrice}</span>
                 <span className='old-price'>&#0036;{oldPrice}</span>
               </div>
-              {listView && <p className='description'>{desc}</p>}
+              <p className='description'>{desc}</p>
             </div>
             <div className='interact'>
               <div className='item-icons compare-btn'>
-                {!listView && <span className='icon-name'>
+                <span className='icon-name'>
                   {compareList[id] === "compare" ? "it is in compare" : "Add to compare"}
-                </span>}
+                </span>
                 {compareList[id] === "compare"? <Link to="/compare" className="link icon-btn"><MdDoneOutline/> </Link>
                 :<button onClick={()=>{addToCompareList(id)}} className='icon-btn'>
                   <DiGitCompare />
                 </button>}
               </div>
               <div className='item-icons wishlist-btn'>
-                {!listView && <span className='icon-name'>
+                <span className='icon-name'>
                   {wishlist[id] === "favorite"? "it is in wishlist" : "Add to wishlist"}
-                </span>}
+                </span>
                 {wishlist[id] === "favorite"? <Link to="/wishlist" className="link icon-btn"><FaHeart /> </Link>
                 :<button onClick={()=>{addToWishlist(id)}} className='icon-btn'>
                   <FiHeart />

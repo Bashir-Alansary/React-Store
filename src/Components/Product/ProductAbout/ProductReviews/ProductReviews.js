@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useShopContext } from '../../../Context/ShopContext';
+import { useShopContext } from '../../../../Context/ShopContext';
 import "./ProductReviews.css"
 import ReviewInputs from './ReviewInputs';
 import { IoMdStar} from "react-icons/io";

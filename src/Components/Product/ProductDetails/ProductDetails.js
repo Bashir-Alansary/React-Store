@@ -6,7 +6,7 @@ import { DiGitCompare } from "react-icons/di";
 import { FiHeart, FiShare2 } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 import { MdDoneOutline } from "react-icons/md";
-import { useShopContext } from '../../Context/ShopContext';
+import { useShopContext } from '../../../Context/ShopContext';
 import {paymentMethods} from "./ProductDetailsData"
 
 export default function ProductDetails({product}) {

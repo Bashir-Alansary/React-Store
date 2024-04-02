@@ -1,9 +1,9 @@
-import visa from "../Assets/images/visa.png"
-import mastercard from "../Assets/images/mastercard.png"
-import paypal from "../Assets/images/paypal.png"
-import amazon from "../Assets/images/amazon.png"
-import ebay from "../Assets/images/ebay.png"
-import discover from "../Assets/images/discover.png"
+import visa from "../../Assets/images/visa.png"
+import mastercard from "../../Assets/images/mastercard.png"
+import paypal from "../../Assets/images/paypal.png"
+import amazon from "../../Assets/images/amazon.png"
+import ebay from "../../Assets/images/ebay.png"
+import discover from "../../Assets/images/discover.png"
 
 export const paymentMethods = [
     {

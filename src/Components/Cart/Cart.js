@@ -4,6 +4,7 @@ import { RiDeleteBin2Line } from "react-icons/ri";
 import "./Cart.css"
 import { Link } from 'react-router-dom';
 import cartBanner from "../Assets/images/cart_banner.png"
+import emptyCart from "../Assets/images/empty-cart.webp"
 import Banner from '../Banner/Banner';
 
 export default function Cart() {
@@ -95,6 +96,7 @@ export default function Cart() {
       </div>
       : <div className='container'>
           <div className='emty-cart'>
+            <img src={emptyCart} />
             <h2>Your cart is empty</h2>
             <div className='main-btn'>
               <Link className='link special-btn' to="/shop" onClick={()=>window.scroll(0,0)}>continue shopping</Link>

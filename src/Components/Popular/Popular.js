@@ -12,7 +12,7 @@ export default function Popular() {
                 {
                     new_collections.map(item => {
                         return(
-                            <Item key={item.id} {...item} />
+                            <Item key={item.id} {...item} itemClass={'item'}/>
                         )
                     })
                 }

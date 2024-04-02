@@ -54,23 +54,28 @@ export const homeTemplates = [
   export const innerPagesTemplates = [
     {
       id: 1,
-      name: "Home 1",
-      path:  "/",
+      name: "About",
+      path:  "/about",
     },
     {
       id: 2,
-      name: "Home 2",
-      path:  "/",
+      name: "Wishlist",
+      path:  "/wishlist",
     },
     {
       id: 3,
-      name: "Home 3",
-      path:  "/",
+      name: "Compare",
+      path:  "/compare",
     },
     {
       id: 4,
-      name: "Home 4",
-      path:  "/",
+      name: "Error404",
+      path:  "*",
+    },
+    {
+      id: 5,
+      name: "Contact",
+      path:  "/contact",
     },
   ];
   

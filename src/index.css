@@ -114,8 +114,12 @@ h1 {
   padding: 10px 25px;
 }
 
+.banner .banner-content .imgbx {
+  height: 100%;
+}
+
 .banner .banner-content .imgbx img {
-  width: 400px;
+  height: 100%;
 }
 
 
@@ -127,6 +131,7 @@ h1 {
   text-transform: uppercase;
   color: #fff;
   background: #0f172a;
+  text-align: center;
   font-size: 14px;
   letter-spacing: 1.4px;
   border-radius: 8px;

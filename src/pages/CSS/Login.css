@@ -10,6 +10,7 @@
 }
 
 .login h2 {
+    font-size: 28px;
     margin-top: 0;
 }
 
@@ -23,7 +24,7 @@
     outline: none;
     margin-bottom: 25px;
     padding: 5px 15px;
-    border: 1px solid #d7d7d7;
+    border: none;
     font-size: 15px;
 }
 

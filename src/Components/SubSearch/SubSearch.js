@@ -15,7 +15,6 @@ export default function SubSearch({showSearch, setShowSearch}) {
   const handleSearchInput = (e) => {
     const {value} = e.target;
     setInputVal(value);
-    setSearchInputVal(value);
     if (value !== "") {
       const items = all_product.filter(item => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
       setSearchItems(items);
@@ -26,6 +25,7 @@ export default function SubSearch({showSearch, setShowSearch}) {
 
   const handleCloseBtn = () => {
     setShowSearch(false);
+    setSearchInputVal(inputVal);
     setInputVal("");
     setSearchItems([]);
   }
@@ -48,31 +48,35 @@ export default function SubSearch({showSearch, setShowSearch}) {
             >
               <FiSearch className='search-icon icon' />
             </Link>
+          </div> 
+          {inputVal !== "" ? <div className='result'>
+            {searchItems.length ?
+              <>
+              <h6 className='title'>products</h6>
+              <ul className='search-items'>
+                {
+                  searchItems.map((item, i) => {
+                    const {id} = item;
+                    return (
+                      <>
+                        {i < 4 ?
+                        <li key = {id} >
+                          <Link className='link' to={"/product/"+ id} onClick={handleCloseBtn}>
+                            <Item {...item} itemClass={"search-view"}/>
+                          </Link>
+                        </li>
+                        : null
+                        }
+                      </>
+                    )
+                  })
+                }
+              </ul>
+              </>
+              : <p className='no-result'>no items search for <span>"{inputVal}"</span></p>
+            }
           </div>
-          {searchItems.length ? 
-          <div className='result'>
-            <h6 className='title'>products</h6>
-            <ul className='search-items'>
-              {
-                searchItems.map((item, i) => {
-                  const {id} = item;
-                  return (
-                    <>
-                      {i < 4 ?
-                      <li key = {id} >
-                        <Link className='link' to={"/product/"+ id} onClick={handleCloseBtn}>
-                          <Item searchView={"search-view"} {...item} />
-                        </Link>
-                      </li>
-                      : null
-                      }
-                    </>
-                  )
-                })
-              }
-            </ul>
-          </div>
-          : null
+          : null 
           }
         </div>
         <button className='close' onClick={handleCloseBtn}><IoCloseSharp className='close-icon icon' /></button>
