@@ -275,3 +275,20 @@
 .search-view .content {
     display: flex;
 }
+
+.load {
+    animation: load 1s linear infinite;
+}
+
+.interact .load {
+    font-size: 16px;
+}
+
+.special-btn .load {
+    font-size: 20px;
+}
+
+@keyframes load {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }

@@ -2,6 +2,8 @@ import React from 'react'
 import { useShopContext } from '../../Context/ShopContext'
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import BlankPage from "../BlankPage/BlankPage"
+import emptyCart from "../Assets/images/empty-cart.webp"
 import "./SubCart.css"
 
 export default function SubCart() {
@@ -14,6 +16,8 @@ export default function SubCart() {
         removeFromCart, 
         getCartTotal, 
         getCartAmount,
+        increaseItemAmount,
+        decreseItemAmount,
     } = useShopContext();
 
   return (
@@ -38,7 +42,12 @@ export default function SubCart() {
                                     </Link>
                                     <div className='details'>
                                         <Link className='link' to={"/product/"+ id}><h6>{name}</h6></Link>
-                                        <span className='item-price'>{cartItems[id]} x {newPrice} $</span>
+                                        <p className='item-price'>{cartItems[id]} x {newPrice} $</p>
+                                        <div className='control'>
+                                            <button onClick={()=>increaseItemAmount(id)}>+</button>
+                                            <input type="number" min={0} value={cartItems[id]} />
+                                            <button onClick={()=>decreseItemAmount(id)}>-</button>
+                                        </div>
                                     </div>
                                     <div className='remove'>
                                         <button onClick={()=>removeFromCart(id)}><IoCloseSharp /></button>
@@ -58,18 +67,8 @@ export default function SubCart() {
                 <button>check out</button>
             </div>
         </div>
-        : <div className='container'>
-            <div className='emty-cart'>
-                <h2>Your cart is empty</h2>
-                <div className='main-btn'>
-                    <Link className='link special-btn' to="/shop" onClick={()=>{window.scroll(0,0); setShowSubCart(false)}}>continue shopping</Link>
-                </div>
-                <h2>Have an account?</h2>
-                <div className='emty-cart-login'>
-                    <Link to="/login" onClick={()=>{window.scroll(0,0); setShowSubCart(false)} }>login</Link>
-                    <span> to check out faster.</span>
-                </div>
-            </div>
+        : <div className='blank-content'>
+            <BlankPage name='cart' img={emptyCart}/>
         </div>
         }
     </div>

@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useShopContext } from '../../Context/ShopContext';
 import compareBanner from "../Assets/images/compare_banner.png"
+import emptyCompare from "../Assets/images/empty-compare.png"
 import {RiDeleteBin2Line} from "react-icons/ri"
 import Banner from '../Banner/Banner';
 import "./Compare.css"
+import BlankPage from '../BlankPage/BlankPage';
 
 export default function Compare() {
 
@@ -46,16 +48,8 @@ export default function Compare() {
             }
             
           </div>
-       : <div className='empty-compare'>
-            <h2>Nothing found in wishlist!</h2>
-            <div className='main-btn'>
-                <Link 
-                className='link special-btn' 
-                to="/" onClick={()=>window.scroll(0,0)}>
-                continue shopping
-                </Link>
-            </div>
-       </div>}
+        : <BlankPage name={'compare'} img={emptyCompare} />
+        }
         </div>
     </div>
   )

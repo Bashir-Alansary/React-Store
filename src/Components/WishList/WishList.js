@@ -3,9 +3,10 @@ import "./WishList.css"
 import { useShopContext } from '../../Context/ShopContext'
 import { RiDeleteBin2Line } from "react-icons/ri";
 import { Link } from 'react-router-dom';
-import emptyWishlist from "../Assets/images/empty_wishlist.png"
+import emptyWishlist from "../Assets/images/empty-wishlist.png"
 import wishlistBanner from "../Assets/images/wishlist_banner.png"
 import Banner from '../Banner/Banner';
+import BlankPage from '../BlankPage/BlankPage';
 
 export default function WishList() {
 
@@ -74,17 +75,8 @@ export default function WishList() {
                         }
                     </tbody>
                     </table>
-                    : <div className='emty-wishlist'>
-                        <h2>Nothing found in wishlist!</h2>
-                        <img src={emptyWishlist} />
-                        <div className='main-btn'>
-                            <Link 
-                            className='link special-btn' 
-                            to="/shop" onClick={()=>window.scroll(0,0)}>
-                            continue shopping
-                            </Link>
-                        </div>
-                    </div>}
+                    : <BlankPage name='wishlist' img={emptyWishlist} />
+                    }
                 </div>
             </div>
         </div>

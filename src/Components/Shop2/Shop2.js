@@ -10,12 +10,12 @@ import PriceRange from './PriceRange/PriceRange';
 import DropdownMenu from './DropdownMenu/DropdownMenu';
 import { sortBy, shownItemsNum } from '../Assets/DropDownMenu';
 import Pagination from './Pagination/Pagination';
-import Banner from '../Banner/Banner';
 import FilterAllData from './FilterAllData';
 import FilterMenData from './FilterMenData';
 import FilterWomenData from './FilterWomenData';
 import FilterKidsData from './FilterKidsData';
 import ShopBanner from './ShopBanner/ShopBanner';
+import noItems from "../Assets/images/no-items.png"
 
 export default function Shop2({category, img}) {
     const {all_product, currentCategory, setCurrentCategory} = useShopContext();
@@ -355,6 +355,7 @@ export default function Shop2({category, img}) {
                             }
                         </div> :
                             <div className='no-products'>
+                                <img src={noItems} />
                                 <h2>No products</h2>
                                 <ul className='chosen-filters'>
                                     {mapFiltersList}

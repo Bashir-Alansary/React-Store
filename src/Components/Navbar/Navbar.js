@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useShopContext } from '../../Context/ShopContext';
 import SubCart from '../SubCart/SubCart';
-import "./Navbar.css";
 import { FiPlus, FiSearch } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
-import { FaHeart } from "react-icons/fa";
 import TemplatesList from '../TemplatesList/TemplatesList';
 import SubSearch from '../SubSearch/SubSearch';
 import wishlist from "../Assets/images/wishlist.png"
+import logo from "../Assets/images/logo.png"
+import cartImg from "../Assets/images/cart.png"
+import "./Navbar.css";
 
 export default function Navbar() {
 
@@ -20,7 +21,7 @@ export default function Navbar() {
     <div className='navbar'>
         <div className='container'>
             <div className='logo'>
-                <img src='images/logo.png' />
+                <img src={logo} />
             </div>
             <div className='main-links'>
                 <ul className='links'>
@@ -51,7 +52,7 @@ export default function Navbar() {
                 <NavLink className="link special-link" to="login"><AiOutlineUser className='icon' /></NavLink>
                 <div className='cart-btn'>
                     <button onClick={()=>setShowSubCart(true)}>
-                        <img src='images/cart.png' />
+                        <img src={cartImg} />
                         <span className='count'>{getCartAmount()}</span>
                     </button>
                     <SubCart />

@@ -11,16 +11,3 @@
     width: 100%;
     font-size: 13px;
 }
-
-.wishlist .emty-wishlist {
-    text-align: center;
-}
-
-.wishlist .emty-wishlist h2 {
-    font-size: 30px;
-}
-
-.wishlist .emty-wishlist .main-btn {
-    width: 300px;
-    margin: 50px auto;
-}

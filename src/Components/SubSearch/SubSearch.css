@@ -22,19 +22,22 @@
     align-items: flex-start;
     justify-content: center;
     padding: 20px;
-    height: 100%;
+    height: 90px;
+    background: #fff;
 }
 
 .sub-search .search-content .input-content {
     position: relative;
     width: 480px;
-    height: 48px;
+    height: 49px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 24px;
     overflow: hidden;
+    border: 1px solid rgb(239, 229, 250);
+    box-shadow: 2px 8px 40px rgba(0,0,0,.05);
 }
 
 .sub-search .input-content input {
@@ -57,27 +60,33 @@
     position: absolute;
     right: 2px;
     top: 2px;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #faf9fd;
-    box-shadow: 0 1px 15px rgb(235, 225, 245);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.125), rgb(13 110 253 / 7%));
+    border: 2px solid #fcf4f4;
     border-radius: 50%;
 }
 
 .sub-search .input-content .icon {
     font-size: 20px;
+    color: rgb(149, 105, 194);
+    transition: 0.5s;
+}
+
+
+.sub-search .link:hover .icon {
     color: rebeccapurple;
 }
 
 .sub-search .search-content .result {
     background: #fff;
     padding: 13px;
-    border-radius: 24px;
     box-shadow: 2px 8px 40px rgba(0,0,0,.08);
-    margin-top: 3px;
+    margin-top: 25px;
+    border-radius: 5px;
 }
 
 .sub-search .search-content .result h6 {
@@ -93,24 +102,14 @@
 
 .sub-search .search-items li {
     padding: 10px;
-    border: 1px solid transparent;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .sub-search .search-items li:hover {
-    border: 1px solid #e9e6e6;
     background: #f8f8f8;
-    padding: 10px 12px;
+    background: linear-gradient(45deg, #e9e7e7, #f0f8f8);
 }
 
-.sub-search .search-items li img {
-    transition: 0.3s;
-    outline: 3px solid #f8f8f8;
-}
-
-.sub-search .search-items li:hover img {
-    outline: 3px solid #fff;
-}
 
 .sub-search .no-result {
     margin-bottom: 0;
@@ -136,10 +135,10 @@
 .sub-search .close-icon {
     transition: 0.5s;
     font-size: 25px;
-    color: #fff;
+    color: rgb(149, 105, 194);
 }
 
 .sub-search .close-icon:hover {
-    color: rgb(194, 132, 255);
+    color: rgb(236, 70, 70);
     transform: rotate(90deg);
 }

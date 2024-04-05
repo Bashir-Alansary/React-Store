@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import cartBanner from "../Assets/images/cart_banner.png"
 import emptyCart from "../Assets/images/empty-cart.webp"
 import Banner from '../Banner/Banner';
+import BlankPage from '../BlankPage/BlankPage';
 
 export default function Cart() {
 
@@ -94,20 +95,7 @@ export default function Cart() {
             </div>
         </div>
       </div>
-      : <div className='container'>
-          <div className='emty-cart'>
-            <img src={emptyCart} />
-            <h2>Your cart is empty</h2>
-            <div className='main-btn'>
-              <Link className='link special-btn' to="/shop" onClick={()=>window.scroll(0,0)}>continue shopping</Link>
-            </div>
-            <h2>Have an account?</h2>
-            <div className='emty-cart-login'>
-              <Link to="/login" onClick={()=>window.scroll(0,0)}>login</Link>
-              <span> to check out faster.</span>
-            </div>
-          </div>
-        </div>
+      : <BlankPage name='cart' img={emptyCart} />
       }
     </div>
   )

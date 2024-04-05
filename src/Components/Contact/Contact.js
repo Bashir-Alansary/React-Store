@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../Banner/Banner'
 import contactBanner from "../Assets/images/contact_banner.png"
+import { contactWays } from '../Assets/footerData'
 import "./Contact.css"
 
 export default function Contact() {
@@ -16,28 +17,34 @@ export default function Contact() {
             >
             </iframe>
             <div className='content'>
-                <div className='form'>
-                    <h3>We would love to hear from you.</h3>
-                    <p>If you’ve got great products your making or looking to work with us then drop us a line.</p>
-                    <form>
-                        <div className='input-content name-phone'>
-                            <input type='text' id='name' placeholder='name' />
-                            <input type='text' id='phone' placeholder='phone' />
-                        </div>
-                        <div className='input-content'>
-                            <input type='email' id='email' placeholder='email' />
-                        </div>
-                        <div className='input-content'>
-                            <textarea placeholder='message'></textarea>
-                        </div>
-                        <div className='input-content'>
-                            <button>send</button>
-                        </div>
-                    </form>
-                </div>
-                <div className='info'>
-                    info
-                </div>
+                <form>
+                    <div className='input-content name-phone'>
+                        <input type='text' id='name' placeholder='name' />
+                        <input type='text' id='phone' placeholder='phone' />
+                    </div>
+                    <div className='input-content'>
+                        <input type='email' id='email' placeholder='email' />
+                    </div>
+                    <div className='input-content'>
+                        <textarea placeholder='message'></textarea>
+                    </div>
+                    <div className='input-content'>
+                        <button>send</button>
+                    </div>
+                </form>
+                <ul className='info'>
+                    {
+                        contactWays.map(item=>{
+                            const{id, name, icon} = item;
+                            return(
+                                <li key={id}>
+                                    <div className='icon'>{icon}</div>
+                                    <p>{name}</p>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
        </div>
     </div>

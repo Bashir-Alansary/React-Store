@@ -85,13 +85,15 @@
 }
 
 .shop2 .no-products {
-    padding: 50px 0;
     text-align: center;
-    height: 250px;
 }
 
 .shop2 .no-products .chosen-filters {
     justify-content: center;
+}
+
+.shop2 .no-products h2 {
+    font-size: 26px;
 }
 
 .shop2 .content .top-filter .view .view-btn {

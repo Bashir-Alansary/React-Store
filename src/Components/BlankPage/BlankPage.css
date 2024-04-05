@@ -1,0 +1,17 @@
+.blank {
+    text-align: center;
+}
+
+.blank img {
+    height: 300px;
+}
+
+.blank h2 {
+    font-size: 23px;
+}
+
+.blank .main-btn {
+    width: 300px;
+    margin: 30px auto;
+}
+

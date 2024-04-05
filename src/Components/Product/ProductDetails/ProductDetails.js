@@ -6,6 +6,7 @@ import { DiGitCompare } from "react-icons/di";
 import { FiHeart, FiShare2 } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 import { MdDoneOutline } from "react-icons/md";
+import { AiOutlineReload } from "react-icons/ai";
 import { useShopContext } from '../../../Context/ShopContext';
 import {paymentMethods} from "./ProductDetailsData"
 
@@ -28,6 +29,34 @@ export default function ProductDetails({product}) {
   } = useShopContext();
 
   const [size, setSize] = useState(sizes[0]);
+
+  const[wishLoad, setWishLoad] = useState(false);
+  const[compareLoad, setCompareLoad] = useState(false);
+  const[addLoad, setAddLoad] = useState(false);
+
+  const addToWishBtn = (id) => {
+    setWishLoad(true);
+    setTimeout(function() {
+      addToWishlist(id);
+      setWishLoad(false);
+    }, 1000);
+  }
+
+  const addToCompareBtn = (id) => {
+    setCompareLoad(true);
+    setTimeout(function() {
+      addToCompareList(id);
+      setCompareLoad(false);
+    }, 1000);
+  }
+
+  const addAddedAmountBtn = (id) => {
+    setAddLoad(true);
+    setTimeout(function() {
+      addAddedAmount(id);
+      setAddLoad(false);
+    }, 1000);
+  }
 
   const decreaseAddedAmount = () => {
     if (addedAmount > 1) {
@@ -103,7 +132,9 @@ export default function ProductDetails({product}) {
           <button 
           className={disabledBtn? 'add disabled' : 'add'} 
           disabled={disabledBtn ? true : false} 
-          onClick={()=>addAddedAmount(id)}>{disabledBtn ? "sold out" : 'add'}
+          onClick={()=>addAddedAmountBtn(id)}
+          >
+          {disabledBtn ? "sold out" : addLoad ? <AiOutlineReload className='load'/>  : 'add'}
           </button>
         </div>
         <p className={addedMsg.class}>
@@ -117,8 +148,9 @@ export default function ProductDetails({product}) {
           <Link to="/wishlist" className="link icon-btn">
             <FaHeart /> <span className='title'>View wishlist</span>
           </Link>
-          :<button onClick={()=>{addToWishlist(id)}} className='icon-btn'>
-            <FiHeart /> <span className='title'>Add to wishlist</span>
+          :<button onClick={()=>{addToWishBtn(id)}} className='icon-btn'>
+            {wishLoad ? <AiOutlineReload className='load'/> : <FiHeart />}
+            <span className='title'>Add to wishlist</span>
           </button>}
         </div>
         <div className='box'>
@@ -126,13 +158,15 @@ export default function ProductDetails({product}) {
           <Link to="/compare" className="link icon-btn">
             <MdDoneOutline /> <span className='title'>View compare list</span>
           </Link>
-          :<button onClick={()=>{addToCompareList(id)}} className='icon-btn'>
-            <DiGitCompare /> <span className='title'>Add to compare</span>
+          :<button onClick={()=>{addToCompareBtn(id)}} className='icon-btn'>
+            {compareLoad ? <AiOutlineReload className='load'/> : <DiGitCompare />}
+            <span className='title'>Add to compare</span>
           </button>}
         </div>
         <div className='box'>
           <button onClick={shareOnFacebook} className='icon-btn'>
-            <FiShare2 /> <span className='title'>Share</span>
+            <FiShare2 /> 
+            <span className='title'>Share</span>
           </button>
         </div>
       </div>

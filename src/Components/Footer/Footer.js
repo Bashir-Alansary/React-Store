@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { pages, media, paymentWays, contactWays } from '../Assets/footerData'
+import logo from "../Assets/images/logo.png"
 import "./Footer.css"
 
 export default function Footer() {
@@ -30,7 +31,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className='footer-logo'>
-                            <img src='images/logo.png' />
+                            <img src={logo} />
                             <ul className='pages'>
                                 {
                                     pages.map((item, i)=>{

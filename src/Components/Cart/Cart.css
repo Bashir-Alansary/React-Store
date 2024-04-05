@@ -77,16 +77,6 @@
     outline: none;
 }
 
-.cart .num input::-webkit-outer-spin-button,
-.cart .num input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.cart .num input {
-    -moz-appearance: textfield;
-}
-
 .cart .amount .control {
     width: 20px;
     height: 42px;

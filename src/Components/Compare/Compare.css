@@ -76,12 +76,3 @@
 .compare .box .remove:hover .remove-icon {
     color: #000;
 }
-
-.compare .empty-compare{
-    text-align: center;
-}
-
-.compare .main-btn {
-    width: 300px;
-    margin: 30px auto;
-}

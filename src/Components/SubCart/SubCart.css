@@ -59,13 +59,12 @@
 
 .subcart .subcart-item .item-price {
     font-weight: bold;
-    margin-left: 30px;
+    margin: 5px 0;
 }
 
 .subcart .subcart-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 5px 0;
 }
 
@@ -80,6 +79,43 @@
 .subcart .subcart-item h6 {
     color: #000;
     margin: 0;
+    padding-top: 3px;
+}
+
+.subcart .control {
+    display: flex;
+    height: 23px;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.subcart .control button,
+.subcart .control input {
+    height: 100%;
+    width: 23px;
+    color: rebeccapurple;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.subcart .control button {
+    border: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.subcart .control input {
+    background: transparent;
+    border: none;
+    text-align: center;
+    appearance: none;
+}
+
+.subcart .control input:focus {
+    outline: none;
 }
 
 .subcart .subcart-item .remove button {
@@ -90,7 +126,7 @@
 }
 
 .subcart .subcart-item .remove button:hover {
-    background: #3F51B5;
+    background: rebeccapurple;
     color: #fff;
 }
 
@@ -112,25 +148,30 @@
 
 .subcart .subcart-btns button,
 .subcart .subcart-btns .link {
-    background: #3F51B5;
+    background: rebeccapurple;
     border-radius: 5px;
     padding: 7px 37px;
     color: #fff;
 }
 
-.subcart .emty-cart {
-    text-align: center;
+.subcart .blank-content {
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.subcart .emty-cart h2 {
-    font-size: 23px;
+.subcart .blank img {
+    height: 150px;
+    margin: 20px 0;
 }
 
-.subcart .emty-cart .main-btn {
-    width: fit-content;
-    margin: 40px auto;
+.subcart .blank h2 {
+    font-size: 20px;
 }
 
-.subcart .emty-cart-login {
-    font-size: 13px;
+.subcart .blank .main-btn {
+    margin: 20px 0;
 }
+
+
