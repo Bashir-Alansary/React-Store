@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { BsArrowUp } from "react-icons/bs";
 import "./ScrollToUp.css"
+import { useShopContext } from '../../Context/ShopContext';
 
 export default function ScrollToUp() {
-    
+    const {setScrollNav} = useShopContext();
     const progressRef = useRef(null);
     const[showScroll, setShowScroll] = useState(false);
 
@@ -19,6 +20,13 @@ export default function ScrollToUp() {
 
         } else {
             setShowScroll(false);
+        }
+
+        // to set active navbar
+        if (scrollTop > 70) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
         }
     })
 

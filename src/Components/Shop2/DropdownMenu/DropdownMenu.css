@@ -1,7 +1,3 @@
-.drop-menu {
-    
-}
-
 .drop-menu .toggle-btn {
     display: flex;
     justify-content: space-between;
@@ -50,4 +46,26 @@
 .drop-menu .drop-items .drop-item:hover {
     background: rebeccapurple;
     color: #fff;
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .drop-menu {
+        width: 170px;
+    }
+
+    .shop2 .content .top-filter .select-boxes .sort {
+        margin-right: 15px;
+    }
+
+    .drop-menu .toggle-btn span:not(:last-child) {
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .drop-menu .drop-items .drop-item {
+        font-size: 14px;
+        min-width: 170px;
+        padding: 6px 17px;
+    }
 }

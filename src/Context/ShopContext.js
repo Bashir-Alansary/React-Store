@@ -29,6 +29,9 @@ export const ShopContextProvider = ({children}) => {
     const[wishlist, setWishlist] = useState(getDefaultCart());
     const[compareList, setCompareList] = useState(getDefaultCart());
     const[searchInputVal, setSearchInputVal] = useState("");
+    const [scrollNav, setScrollNav] = useState(false);
+    const navHeight = "90px";
+
 
     const increaseItemAmount = (itemId) => {
         setCartItems((prev) => ({...prev, [itemId]:prev[itemId]+1}))
@@ -147,6 +150,9 @@ export const ShopContextProvider = ({children}) => {
         setProducts,
         searchInputVal,
         setSearchInputVal,
+        scrollNav,
+        setScrollNav,
+        navHeight,
     };
 
     return(

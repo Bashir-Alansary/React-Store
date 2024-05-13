@@ -25,6 +25,7 @@ import img7 from "./images/item7.jpg"
 import img8 from "./images/item8.jpg"
 import img9 from "./images/item9.jpg"
 import img10 from "./images/item10.jpg"
+import img10_2 from "./images/item10_2.avif"
 import img11 from "./images/item11.jpg"
 import img12 from "./images/item12.jpg"
 import img13 from "./images/item13.jpg"
@@ -195,7 +196,7 @@ let all_product = [
     img:  img10,
     newPrice: "55.00",
     oldPrice: "58.50",
-    imgs: [img10, img11, img5, img4],
+    imgs: [img10, img10_2],
     sizes: ["L", "ML", "XL", "XXL"],
     color: "Pink",
     type: "Shoeses",

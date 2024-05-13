@@ -50,3 +50,30 @@
 .offers .blur-color {
     background: linear-gradient(180deg, #f6f6f6, #f8fafc);
 }
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .offers .content {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .offers .content > div {
+        width: 100%;
+    }
+
+    .offers .text {
+        text-align: center;
+    }
+
+    .offers .text h1 {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .offers .text span {
+        margin-bottom: 20px;
+    }
+  }

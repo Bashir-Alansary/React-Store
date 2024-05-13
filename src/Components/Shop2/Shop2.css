@@ -141,3 +141,108 @@
     margin-right: 0;
 }
 
+/* media */
+@media only screen and (max-width: 600px) {
+
+    .shop2 .container {
+        max-width: 100% !important;
+    }
+
+    .shop2 .container > .content {
+        flex-direction: column;;
+    }
+
+    .shop2 .content .left-box {
+        width: 100%;
+    }
+
+    .shop2 .left-box .category {
+        margin-bottom: 0;
+    }
+
+    .shop2 .left-box .category button {
+        background: #f5f5f5;
+        border: 1px solid #e9e8e8;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        border-radius: 7px;
+    }
+
+    .shop2 .left-box .category button h3 {
+        margin-bottom: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .shop2 .left-box .category > h3 {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .shop2 .left-box .category ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shop2 .left-box .category ul,
+    .shop2 .left-box .price-range {
+        transition: 0.5s;
+        overflow: hidden;
+        background: #fcfaeb;
+        margin-bottom: 20px;
+    }
+
+    .shop2 .left-box .price-range {
+        padding: 0 20px;
+    }
+
+    .shop2 .left-box .price-range .slider {
+        margin-top: 20px;
+    }
+
+    .shop2 .left-box .category .show {
+        height: 140px;
+    }
+    
+    .shop2 .left-box .category .hide {
+        height: 0;
+    }
+
+    .shop2 .left-box .category li {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .category li label {
+        font-size: 14px;
+    }
+
+    .shop2 .content .right-box {
+        width: 100%;
+    }
+
+    .shop2 .content .top-filter .view {
+        padding-top: 3px;
+    }
+
+    .shop2 .content .top-filter .view .view-btn {
+        margin-right: 0;
+        font-size: 19px;
+    }
+
+    .shop2 .content .products-content {
+        justify-content: space-between;
+    }
+
+    .shop2 .products-content .item {
+        width: 48%;
+    }
+
+    .shop2 .products-content .item {
+        margin-right: 0;
+    }
+
+}

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import "./PriceRange.css"
 
-export default function PriceRange({range, setRange, filterPrices}) {
+export default function PriceRange({range, setRange, filterPrices, togglePrice}) {
 
     const sliderBar = useRef(null);
     const minRangeInputRef = useRef(null);
@@ -30,7 +30,7 @@ export default function PriceRange({range, setRange, filterPrices}) {
     }
 
     return (
-        <div className="price-range">
+        <div className={togglePrice? "price-range show" : "price-range hide"}>
             <div className='slider'>
                 <div className='bar' ref={sliderBar}></div>
                 <div className='range-inputs'>

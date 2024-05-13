@@ -96,7 +96,7 @@ export default function Item({id, img, name, oldPrice, newPrice, desc, itemClass
 
             <div className="main-btn">
               <button 
-              className='special-btn' 
+              className={addLoad ?  'special-btn disabled' : 'special-btn' }
               disabled = {addLoad? true : false} 
               onClick={()=>addToCartBtn(id)}
               >

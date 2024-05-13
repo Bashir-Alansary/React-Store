@@ -35,7 +35,7 @@ export default function Compare() {
                       </Link>
                         <span>{newPrice}$</span>
                         <div className='main-btn'>
-                          <Link className='link special-btn' to={"/product/"+id}>select options</Link>
+                          <Link className='link special-btn' to={"/product/"+id}><span className='hide-mobile'>select </span>options</Link>
                         </div>
                         <button onClick={()=>removeFromCompareList(id)}className="remove">
                           <RiDeleteBin2Line className='remove-icon' />

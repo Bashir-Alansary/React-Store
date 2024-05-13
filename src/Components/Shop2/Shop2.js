@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaList } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useShopContext } from '../../Context/ShopContext'
 import Item from '../Item/Item';
 import "./Shop2.css"
@@ -28,6 +29,7 @@ export default function Shop2({category, img}) {
     const[chosenTypes, setChosenTypes] = useState([]);
     const[valToSort, setValToSort] = useState(sortBy[0].value);
     const[paginationItems, setPaginationItems] = useState(6);
+    const[togglePrice, setTogglePrice] = useState(false);
     const[range, setRange] = useState({
         minRange: 0,
         maxRange: 300,
@@ -305,10 +307,15 @@ export default function Shop2({category, img}) {
                     </div>
                     {getFilterComp()}
                     <div className='category'>
-                        <h3>Price range</h3>
-                        <PriceRange range = {range} setRange = {setRange} filterPrices = {filterPrices} />
+                        <h3 className='hide-mobile'>Price range</h3>
+                        <button className='hide-pc' onClick={() => setTogglePrice(!togglePrice)}>
+                            <h3>Price range</h3>
+                            {togglePrice ? <span><FaChevronUp /></span>
+                            : <span><FaChevronDown /></span> }
+                        </button>
+                        <PriceRange range = {range} setRange = {setRange} filterPrices = {filterPrices} togglePrice={togglePrice} />
                     </div>
-                    <div className='category'>
+                    <div className='category hide-mobile'>
                         <h3>New Arrivals</h3>
                         {
                             newArrivals.map(item => {

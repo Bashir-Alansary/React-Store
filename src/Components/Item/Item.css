@@ -288,7 +288,46 @@
     font-size: 20px;
 }
 
+.special-btn.disabled {
+    background: #0f172ab0;
+    cursor: not-allowed;
+}
+
 @keyframes load {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .item {
+        width: 47%;
+    }
+
+    .item .item-icons .icon-btn, 
+    .item-list-view .item-icons .icon-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .item-list-view {
+        margin-bottom: 50px;
+    }
+
+    .item-list-view h3 {
+        font-size: 20px;
+    }
+
+    .item-list-view .description {
+        display: none;
+    }
+
+    .item-list-view .interact {
+        margin: 12px 0;
+    }
+
+    .item-list-view .main-btn {
+        margin-top: 20px;
+    }
+
   }

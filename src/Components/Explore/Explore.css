@@ -91,3 +91,16 @@
 .explore .blur-color {
     background: linear-gradient(180deg,#f8fafc, #fdfdfb);
 }
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .explore .content {
+        flex-wrap: wrap;
+    }
+
+    .explore .content .box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

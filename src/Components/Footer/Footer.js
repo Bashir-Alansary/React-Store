@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className='container'>
                     <div className='info'>
                         <div className='desc'>
-                            <p>
+                            <p className='hide-mobile'>
                                 At vero eos et accusamus et iusto odio dignissimos ducimus,
                                  duis faucibus enim vitae duis faucibus enim vitae
                             </p>
@@ -48,7 +48,7 @@ export default function Footer() {
                                 }
                             </ul>
                         </div>
-                        <div className='details'>
+                        <div className='details hide-mobile'>
                             <ul className='contact-ways'>
                                 {
                                     contactWays.map(item=>{
@@ -82,14 +82,16 @@ export default function Footer() {
         <div className='rights'>
             <div className='container'>
                 <p className='copyright'>
-                    Copyright © 2021 Vinovathemes. All rights reserved.
+                    Copyright © 2021 Vino.<span className='hide-mobile'>Vinovathemes. All rights reserved</span>
                 </p>
                 <div className='terms'>
                     <a href='#'>Privacy Policy</a>
                     <span className='slash'>|</span>
-                    <a href='#'>Terms of Use</a>
-                    <span className='slash'>|</span>
-                    <a href='#'>FAQs</a>
+                    <a href='#'>Terms</a>
+                    <span className='hide-mobile'>
+                        <span className='slash'>|</span>
+                        <a href='#'>FAQs</a>
+                    </span>
                 </div>
             </div>
         </div>

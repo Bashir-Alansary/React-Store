@@ -14,7 +14,7 @@
 }
 
 .sub-search.hide {
-    top: -100%;
+    top: -110%;
 }
 
 .sub-search > .content {
@@ -142,3 +142,17 @@
     color: rgb(236, 70, 70);
     transform: rotate(90deg);
 }
+
+@media only screen and (max-width: 600px) {
+    .sub-search .search-content .input-content {
+        width: 364px;
+    }
+
+    .search-view h3 {
+        font-size: 14px;
+    }
+
+    .sub-search button.close {
+        margin-left: 5px;
+    }
+  }

@@ -16,8 +16,8 @@ export default function WishList() {
     <div className='wishlist'>
        <Banner img = {wishlistBanner} title = {"Your Wishlist"} num={getWishlistAmount()} />
         <div className='wishlist-items'>
-            <div className='container'>
-                <div className='content'>
+            <div className='container con-table'>
+                <div className='content for-table'>
                  {getWishlistAmount() > 0 ? <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -58,7 +58,7 @@ export default function WishList() {
                                                 className='link special-btn' 
                                                 to={"/product/" + id} 
                                                 onClick={()=>window.scroll(0,0)}>
-                                                select options
+                                                <span className='hide-mobile'>select </span>options
                                                 </Link>
                                             </div>
                                         </td>

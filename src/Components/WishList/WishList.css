@@ -11,3 +11,13 @@
     width: 100%;
     font-size: 13px;
 }
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .wishlist .table .pruchase .main-btn {
+        width: 120px;
+        margin: 0 auto;
+    }
+}
+       

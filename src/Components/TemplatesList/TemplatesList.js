@@ -3,7 +3,7 @@ import "./TemplatesList.css"
 import { homeTemplates, shopTemplates, innerPagesTemplates, brands } from '../Assets/TemplatesData'
 import { Link } from 'react-router-dom';
 
-export default function TemplatesList({showTemplates}) {
+export default function TemplatesList({showTemplates, hideMobileMenu, togglebtn}) {
   return (
     <div className={showTemplates? 'templates-list show' : 'templates-list hide'}>
         <div className='container'>
@@ -29,7 +29,7 @@ export default function TemplatesList({showTemplates}) {
                     const{id, name, path} = template;
                     return (
                       <li key={id}>
-                        <Link className='link' to={path}>{name}</Link>
+                        <Link className='link' onClick={hideMobileMenu} to={path}>{name}</Link>
                       </li>
                     )
                   })

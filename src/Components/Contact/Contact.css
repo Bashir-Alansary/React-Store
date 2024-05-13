@@ -86,3 +86,20 @@
     text-align: center;
     font-size: 15px;
 }
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .contact .content {
+        flex-direction: column;
+    }
+
+    .contact .content form,
+    .contact .content .info {
+        width: 100%;
+    }
+
+    .contact .content form {
+        margin-bottom: 50px;
+    }
+}

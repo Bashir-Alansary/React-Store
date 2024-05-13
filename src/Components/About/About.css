@@ -28,3 +28,19 @@
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .about .content .text {
+        height: fit-content;
+    }
+
+    .about .text h1:not(.banner h1) {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .about .text p {
+        font-size: 15px;
+    }
+}

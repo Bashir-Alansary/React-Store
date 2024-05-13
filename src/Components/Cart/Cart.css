@@ -134,3 +134,24 @@
 .emty-cart-login {
     font-size: 13px;
 }
+
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .cart .final-details {
+        padding: 10px;
+    }
+
+    .cart .final-details .total b {
+        font-size: 17px;
+    }
+
+    .cart .final-details .total span {
+        font-size: 15px;
+    }
+
+    .wishlist .table .pruchase .link {
+        font-size: 12px;
+    }
+}

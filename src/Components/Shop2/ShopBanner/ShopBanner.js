@@ -21,7 +21,7 @@ export default function ShopBanner({category, img}) {
                                     unChosenCategories.map((item, i) => {
                                         return (
                                             <li key={i}>
-                                                <span className='slash'>/</span>
+                                                {i > 0 ?<span className='slash'>/</span> : null}
                                                 <Link className='link' to={"/" + item.toLowerCase()}>{item}</Link>
                                             </li>
                                         )
@@ -30,12 +30,12 @@ export default function ShopBanner({category, img}) {
                             </ul>
                         </div>
                         {categoryItemsLength ?
-                          <h2><span>{categoryItemsLength}</span> items<span> for </span>{category}</h2>
-                        : <h2><span>12</span> Hours <span>20</span> Mins</h2>
+                          <h2 className='hide-mobile'><span>{categoryItemsLength}</span> items<span> for </span>{category}</h2>
+                        : <h2 className='hide-mobile'><span>12</span> Hours <span>20</span> Mins</h2>
                         }
-                        <button className='banner-btn'>Explore now</button>
+                        <button className='banner-btn hide-mobile'>Explore now</button>
                     </div>
-                    <div className='imgbx'>
+                    <div className='imgbx hide-mobile'>
                         <img src={img} />
                     </div>
             </div>

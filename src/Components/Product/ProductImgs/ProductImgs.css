@@ -40,3 +40,25 @@
     width: 100px;
     height: 100%;
 }
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .product-imgs {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .product-imgs .imgs-btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        order: 2;
+    }
+    
+    .product-imgs .main-img {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 1;
+    }
+}

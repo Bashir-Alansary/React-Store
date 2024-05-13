@@ -123,3 +123,25 @@
     background: linear-gradient(180deg, transparent, #dedede);
 }
 
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .footer .info {
+        flex-direction: column;
+    }
+
+    .footer .info > div {
+        width: 100%;
+    }
+
+    .footer .desc {
+        order: 3;
+    }
+
+    .footer .info ul:not(.contact-ways) {
+        justify-content: center;
+    }
+
+    
+}

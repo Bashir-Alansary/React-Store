@@ -1,7 +1,16 @@
 .navbar {
-    height: 90px;
+    height: 10px;
     background: linear-gradient(180deg,#d5d5d5, #f6f6f6);
     padding: 0 !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar.active {
+    box-shadow: 0 1px 15px #1a171726;
 }
 
 .navbar .container {
@@ -41,21 +50,25 @@
  .navbar .links .link:after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 2%;
+    bottom: -2px;
+    left: 25%;
+    width: 50%;
     height: 2px;
     background: none;
-    transition: 0.5s;
+    transition: 0.7s;
  }
 
-.navbar li .active:after {
+.navbar li .link.active::after {
     background: #ef8256;
-    width: 100%;
+    bottom: 0;
 }
 
 .navbar .main-links .tamplates-link {
     position: relative;
+}
+
+.navbar .main-links .tamplates-link.for-mobile {
+    display: none;
 }
 
 .navbar .main-links .tamplates-link .btn-content {
@@ -67,6 +80,7 @@
     padding: 0;
     background: none;
     border: none;
+    width: 100%;
 }
 
 .navbar .tamplates-link .templates-icon {
@@ -76,12 +90,12 @@
     transition: 0.5s;
 }
 
-.navbar .tamplates-link:hover .templates-icon{
+.navbar .tamplates-link:not(.for-mobile):hover .templates-icon{
     transform: rotate(45deg);
 }
 
-.navbar .tamplates-link:hover button span,
-.navbar .tamplates-link:hover button .templates-icon  {
+.navbar .tamplates-link:not(.for-mobile):hover button span,
+.navbar .tamplates-link:not(.for-mobile):hover button .templates-icon  {
     color: #fc5d1f;
 }
 
@@ -140,3 +154,157 @@
     border-radius: 50%;
     font-size: 10px;
 }
+
+.navbar .toggle {
+    display: none;
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .navbar .toggle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        border: none;
+        background: none;
+        width: 45px;
+        padding: 0;
+    }
+
+    .navbar .toggle span {
+        display: block;
+        height: 2px;
+        background: #18489f;
+        transition: 0.5s;
+    }
+
+    .navbar .toggle span.short {
+        width: 25px;
+        margin-bottom: 12px;
+    }
+
+    .navbar .toggle .short.active {
+        transform: rotate(45deg) translate(8px, 0px);
+    }
+
+    .navbar .toggle .long.active {
+        transform: rotate(-45deg) translate(10px, -2px);
+        width: 25px;
+    }
+
+    .navbar .toggle span.long {
+        width: 45px;
+    }
+
+   .navbar .main-links {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        background: linear-gradient(180deg, #f6f6f6, #d7d7d7);
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .navbar .main-links.show {
+        height: 510px;
+    }
+
+    .navbar .main-links.hide {
+        height: 0;
+    }
+
+    .navbar .main-links .links {
+        display: unset;
+        width: 100%;
+    }
+
+    .navbar .main-links .links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #fff9;
+        transition: 0.5s;
+    }
+
+    .navbar .main-links .links li:first-of-type {
+        border-top: 1px solid #fff9;
+    }
+
+    .navbar .main-links .links li:hover {
+        background: #fff9;
+    }
+
+    .navbar .main-links .links li .link {
+        display: block;
+        width: 100%;
+        padding: 13px 20px;
+        letter-spacing: 2px;
+    }
+
+    .navbar .main-links .links li .link::after {
+        display: none;
+    }
+
+    .navbar .login-cart {
+        margin-left: 90px;
+    }
+
+    .navbar .special-link.wish {
+        display: none;
+    }
+
+    .navbar .login-cart .cart-btn {
+        margin-left: 0;
+    }
+
+    .navbar .login-cart .cart-btn button > img {
+        width: 45px;
+    }
+
+    .navbar .login-cart .cart-btn .count {
+        top: -2px;
+    }
+
+    .navbar .main-links .tamplates-link .btn-content {
+         height: 75px;
+         line-height: 75px;
+    }
+
+    .navbar .main-links .tamplates-link {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .navbar .main-links .tamplates-link:not(.for-mobile) {
+        display: none;
+    }
+    
+    .navbar .main-links .tamplates-link.for-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar .tamplates-link.for-mobile button span {
+        transition: 0.5s;
+    }
+
+    .navbar .tamplates-link.for-mobile:hover button span {
+        color: #061838;
+    }
+
+    .navbar .tamplates-link.for-mobile button.active .templates-icon,
+    .navbar .tamplates-link.for-mobile button.active:hover .templates-icon {
+        color: red;
+    }
+
+    .navbar .tamplates-link.for-mobile button:hover .templates-icon {
+        color: #18489f;
+    }
+
+    .navbar .tamplates-link.for-mobile button.active .templates-icon {
+        transform: rotate(45deg);
+        font-size: 22px;
+    }
+  }

@@ -56,3 +56,15 @@
 .hero button span {
     margin-right: 7px;
 }
+
+
+/* media */
+@media only screen and (max-width: 600px) {
+    .hero .content {
+        height: 90%;
+    }
+
+    .hero .text h1 {
+        font-size: 47px;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ProductMoreInfo({info}) {
   return (
-    <div className='info'>
+    <div className='info for-table'>
       <table class="table table-bordered">
           <thead>
             <tr>
